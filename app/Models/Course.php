@@ -36,6 +36,24 @@ class Course extends Model
 
     //Relaciones 1 a 1
     //Relaciones 1 a M
+    public function Goals(){
+        return $this->hasMany(Goal::class);
+    }
+    public function Requirements(){
+        return $this->hasMany(Requirement::class);
+    }
+    public function Audiences(){
+        return $this->hasMany(Audience::class);
+    }
+    public function Qualifications(){
+        return $this->hasMany(Qualification::class);
+    }
+    public function Reviews(){
+        return $this->hasMany(Review::class);
+    }
+    public function Sections(){
+        return $this->hasMany(Section::class);
+    }
     //Relaciones M a M
     //Relaciones 1 a 1 Inversa
     //Relaciones 1 a M Inversa
@@ -48,7 +66,13 @@ class Course extends Model
     public function Prize(){
         return $this->belongsTo(Prize::class);
     }
+    public function Teacher(){
+        return $this->belongsTo(User::class, 'user_id');
+    }
     //Relaciones M a M Inversa
+    public function Students(){
+        return $this->belongsToMany(User::class);
+    }
     //Relaciones 1 a 1 Polimorfica
     //Relaciones 1 a M Polimorfica
     //Relaciones M a M Polimorfica

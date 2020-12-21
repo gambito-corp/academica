@@ -25,7 +25,7 @@ class CourseFactory extends Factory
      */
     public function definition()
     {
-        $title = $this->faker->sentence();
+        $title = $this->faker->sentence(5);
         return [
             'user_id' => 1,
             'level_id' => Level::all()->random()->id,

@@ -72,10 +72,25 @@ class User extends Authenticatable
         return $this->hasOne(Profile::class);
     }
     //Relaciones 1 a M
-    public function Post(){
+    public function Posts(){
         return $this->hasMany(Post::class);
     }
+    public function CousesDictated(){
+        return $this->hasMany(Course::class);
+    }
+    public function Qualifications(){
+        return $this->hasMany(Qualification::class);
+    }
+    public function Reviews(){
+        return $this->hasMany(Review::class);
+    }
     //Relaciones M a M
+    public function CourseEnrolled(){
+        return $this->belongsToMany(Course::class);
+    }
+    public function Lessons(){
+        return $this->belongsToMany(Lesson::class);
+    }
     //Relaciones 1 a 1 Inversa
     //Relaciones 1 a M Inversa
     //Relaciones M a M Inversa
@@ -86,7 +101,9 @@ class User extends Authenticatable
     //Relaciones 1 a M Polimorfica Inversa
     //Relaciones M a M Polimorfica Inversa
 
-
+    /*
+     * RELACIONES
+    */
     //Relaciones 1 a 1
     //Relaciones 1 a M
     //Relaciones M a M

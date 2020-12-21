@@ -23,7 +23,7 @@ class CreateCoursesTable extends Migration
             $table->string('title');
             $table->string('slug');
             $table->string('subtitle');
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->enum('status', [Course::BORRADOR, Course::REVISION, Course::PUBLICADO, Course::BLOQUEADO])->default(Course::BORRADOR);
             $table->timestamps();
         });
