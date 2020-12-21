@@ -2,14 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2a76065-d8a2-4e6f-903d-489af9484f88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-cepecij/app/View/Components/Blog/blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-cepecij/app/View/Components/Curso/curso.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-cepecij/database/diagrama/newCepecij.dia.autosave" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-cepecij/database/diagrama/newCepecij.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/js/instructor/course/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/components/blog/blog.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/components/curso/curso.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/academica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/academica.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/InicioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/InicioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/Instructor/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/Instructor/CourseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Livewire/Instructor/CourseIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Livewire/Instructor/CourseIndex.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Models/CategoryBlogs.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Models/CategoryBlogs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Models/Course.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/database/diagrama/newCepecij.dia" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/database/diagrama/newCepecij.dia" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/database/factories/CategoryBlogsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/database/factories/CategoryBlogsFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/database/seeders/CourseSeeders.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/database/seeders/CourseSeeders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/database/seeders/PostSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/database/seeders/PostSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/resources/views/Blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/Blog/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/resources/views/Instructor/course/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/Instructor/course/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/resources/views/Instructor/course/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/Instructor/course/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/resources/views/Instructor/course/partials/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/Instructor/course/partials/_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/resources/views/components/cursos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/components/cursos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/resources/views/front/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/front/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-cepecij/resources/views/livewire/instructor/course-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/livewire/instructor/course-index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -137,6 +175,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lwjqhCxc0PRByGfhprJTuP8KCh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -146,6 +185,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -155,6 +200,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f2a76065-d8a2-4e6f-903d-489af9484f88" name="Default Changelist" comment="" />
@@ -162,8 +208,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608515240652</updated>
-      <workItem from="1608515243110" duration="344000" />
+      <workItem from="1608515243110" duration="8563000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

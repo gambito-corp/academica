@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/academica.iml" filepath="$PROJECT_DIR$/.idea/academica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../new-cepecij/.idea/new-cepecij.iml" filepath="$PROJECT_DIR$/../new-cepecij/.idea/new-cepecij.iml" />
     </modules>
   </component>
 </project>
