@@ -19,21 +19,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-//        $this->deleteDirectories([
-//            'courses',
-//            'posts',
-//        ]);
-//        $this->makeDirectories([
-//            'courses',
-//            'posts',
-//        ]);
-//        $this->truncate([
-//            User::$tabla,
-//            Profile::$tabla,
-//            CategoryPost::$tabla,
-//            Tag::$tabla,
-//        ]);
-//        $this->call(UserSeeders::class);
+        $this->deleteDirectories([
+            'courses',
+            'posts',
+        ]);
+        $this->makeDirectories([
+            'courses',
+            'posts',
+        ]);
+        $this->truncate([
+            User::$tabla,
+            Profile::$tabla,
+            CategoryPost::$tabla,
+            Tag::$tabla,
+        ]);
         $this->call(UserSeeder::class);
         $this->call(CategoryPostSeeder::class);
         $this->call(TagSeeder::class);

@@ -25,7 +25,7 @@ class ProfileFactory extends Factory
             'user_id' => null,
             'titulo' => null,
             'bio' => null,
-            'web' => 'http://pedroaguirreconsultores.com',
+            'web' => $this->faker->domainName,
             'facebook' => 'https://www.facebook.com/profile.php?id=100018287836640',
             'linkedin' => 'https://www.linkedin.com/in/pedroraguirre/'
         ];

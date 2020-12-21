@@ -25,7 +25,7 @@ class PostFactory extends Factory
      */
     public function definition()
     {
-        $title = $this->faker->unique()->word(20);
+        $title = $this->faker->unique()->sentence(6);
         return [
             'user_id'           => User::all()->random()->id,
             'category_post_id'  => CategoryPost::all()->random()->id,

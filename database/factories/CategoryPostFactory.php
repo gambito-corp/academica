@@ -22,7 +22,7 @@ class CategoryPostFactory extends Factory
      */
     public function definition()
     {
-        $title = $this->faker->word(20);
+        $title = $this->faker->unique()->sentence(3);
         return [
             'title' => $title,
             'slug' => Str::slug($title)

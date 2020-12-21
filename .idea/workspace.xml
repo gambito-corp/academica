@@ -9,16 +9,16 @@
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/js/instructor/course/form.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/components/blog/blog.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/components/curso/curso.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/academica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/academica.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CategoryPostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CategoryPostFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ProfileFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProfileFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/TagFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TagFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/CategoryPostSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CategoryPostSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/PostSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PostSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/TagSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/TagSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/InicioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/InicioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/Instructor/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/Instructor/CourseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Livewire/Instructor/CourseIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Livewire/Instructor/CourseIndex.php" afterDir="false" />
@@ -208,7 +208,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608515240652</updated>
-      <workItem from="1608515243110" duration="8563000" />
+      <workItem from="1608515243110" duration="10182000" />
     </task>
     <servers />
   </component>

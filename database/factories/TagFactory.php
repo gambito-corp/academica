@@ -22,7 +22,7 @@ class TagFactory extends Factory
      */
     public function definition()
     {
-        $title = $this->faker->word(20);
+        $title = $this->faker->unique()->sentence(2);
         return [
             'title' => $title,
             'slug' => Str::slug($title)

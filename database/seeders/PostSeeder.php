@@ -14,12 +14,14 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-        $posts = Post::factory(20)->create();
-        foreach ($posts as $post){
-            $post->Tags()->attach([
-                rand(1,4),
-                rand(5,8)
-            ]);
+        if(env('APP_ENV') == 'local'){
+            $posts = Post::factory(20)->create();
+            foreach ($posts as $post){
+                $post->Tags()->attach([
+                    rand(1,4),
+                    rand(5,8)
+                ]);
+            }
         }
     }
 }
