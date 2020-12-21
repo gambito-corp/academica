@@ -4,21 +4,16 @@
     <list default="true" id="f2a76065-d8a2-4e6f-903d-489af9484f88" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../new-cepecij/app/View/Components/Blog/blog.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/app/View/Components/Curso/curso.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../new-cepecij/database/diagrama/newCepecij.dia.autosave" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/database/diagrama/newCepecij.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/js/instructor/course/form.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/components/blog/blog.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/components/curso/curso.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CategoryPostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CategoryPostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/ProfileFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProfileFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/TagFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TagFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/CategoryPostSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CategoryPostSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_021510_create_profiles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_21_021510_create_profiles_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PostSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PostSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/TagSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/TagSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/InicioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/InicioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/Instructor/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/Instructor/CourseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Livewire/Instructor/CourseIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Livewire/Instructor/CourseIndex.php" afterDir="false" />
@@ -208,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608515240652</updated>
-      <workItem from="1608515243110" duration="10182000" />
+      <workItem from="1608515243110" duration="13778000" />
     </task>
     <servers />
   </component>

@@ -19,11 +19,12 @@ class CreateProfilesTable extends Migration
                 ->constrained()
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
-            $table->string('titulo')->nullable();
-            $table->string('bio')->nullable();
+            $table->string('titulo');
+            $table->string('bio');
             $table->string('web')->nullable();
             $table->string('facebook')->nullable();
             $table->string('linkedin')->nullable();
+            $table->string('youtube')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

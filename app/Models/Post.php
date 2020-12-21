@@ -16,6 +16,8 @@ class Post extends Model
     public const PUBLICADO = 3;
     public const BLOQUEADO = 4;
 
+    public static $tabla = 'posts';
+
     protected $fillable = [
         'user_id',
         'category_post_id',

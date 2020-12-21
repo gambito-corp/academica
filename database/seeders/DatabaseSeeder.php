@@ -2,7 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\CategoryCourse;
 use App\Models\CategoryPost;
+use App\Models\Course;
+use App\Models\Level;
+use App\Models\Prize;
 use App\Models\Profile;
 use App\Models\Tag;
 use App\Models\User;
@@ -32,11 +36,18 @@ class DatabaseSeeder extends Seeder
             Profile::$tabla,
             CategoryPost::$tabla,
             Tag::$tabla,
+            Level::$tabla,
+            CategoryCourse::$tabla,
+            Prize::$tabla,
         ]);
         $this->call(UserSeeder::class);
         $this->call(CategoryPostSeeder::class);
         $this->call(TagSeeder::class);
         $this->call(PostSeeder::class);
+        $this->call(LevelSeeder::class);
+        $this->call(CategoryCourseSeeder::class);
+        $this->call(PrizeSeeder::class);
+        $this->call(CourseSeeder::class);
     }
 
     public function makeDirectories(array $directories)

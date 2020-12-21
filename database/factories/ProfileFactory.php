@@ -27,7 +27,8 @@ class ProfileFactory extends Factory
             'bio' => null,
             'web' => $this->faker->domainName,
             'facebook' => 'https://www.facebook.com/profile.php?id=100018287836640',
-            'linkedin' => 'https://www.linkedin.com/in/pedroraguirre/'
+            'linkedin' => 'https://www.linkedin.com/in/pedroraguirre/',
+            'youtube' => 'https://www.linkedin.com/in/pedroraguirre/'
         ];
     }
 }
