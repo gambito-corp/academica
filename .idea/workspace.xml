@@ -2,31 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2a76065-d8a2-4e6f-903d-489af9484f88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Admin/index.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/app/View/Components/Blog/blog.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/app/View/Components/Curso/curso.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/database/diagrama/newCepecij.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/js/instructor/course/form.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/components/blog/blog.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/components/curso/curso.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/academica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/academica.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Exam.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Exam.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Lesson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Meeting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Meeting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/diagramas/BD/academica.dia" beforeDir="false" afterPath="$PROJECT_DIR$/database/diagramas/BD/academica.dia" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/diagramas/BD/academica.dia.autosave" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/CourseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CourseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PostSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PostSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/InicioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/InicioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/Instructor/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/Instructor/CourseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Livewire/Instructor/CourseIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Livewire/Instructor/CourseIndex.php" afterDir="false" />
@@ -226,7 +213,9 @@
       <updated>1608515240652</updated>
       <workItem from="1608515243110" duration="25453000" />
       <workItem from="1608583114980" duration="6318000" />
-      <workItem from="1608610071484" duration="1791000" />
+      <workItem from="1608610071484" duration="2454000" />
+      <workItem from="1608636079207" duration="425000" />
+      <workItem from="1608636660857" duration="2182000" />
     </task>
     <servers />
   </component>
