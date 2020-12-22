@@ -27,7 +27,6 @@ class Course extends Model
         'slug',
         'subtitle',
         'descripcion',
-        'status',
     ];
 
     /*
@@ -54,6 +53,9 @@ class Course extends Model
     public function Sections(){
         return $this->hasMany(Section::class);
     }
+    public function Lessons(){
+        return $this->hasManyThrough(Lesson::class, Section::class);
+    }
     //Relaciones M a M
     //Relaciones 1 a 1 Inversa
     //Relaciones 1 a M Inversa
@@ -74,6 +76,9 @@ class Course extends Model
         return $this->belongsToMany(User::class);
     }
     //Relaciones 1 a 1 Polimorfica
+    public function Image(){
+        return $this->morphOne(Image::class, 'imageable');
+    }
     //Relaciones 1 a M Polimorfica
     //Relaciones M a M Polimorfica
     //Relaciones 1 a 1 Polimorfica Inversa

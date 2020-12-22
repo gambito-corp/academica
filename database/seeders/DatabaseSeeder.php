@@ -6,19 +6,24 @@ use App\Models\Answer;
 use App\Models\Audience;
 use App\Models\CategoryCourse;
 use App\Models\CategoryPost;
+use App\Models\Comment;
 use App\Models\Course;
 use App\Models\Description;
 use App\Models\Exam;
 use App\Models\Goal;
+use App\Models\Image;
 use App\Models\Lesson;
 use App\Models\Level;
 use App\Models\Meeting;
+use App\Models\Note;
 use App\Models\Platform;
 use App\Models\Prize;
 use App\Models\Profile;
 use App\Models\Qualification;
 use App\Models\Question;
+use App\Models\Reaction;
 use App\Models\Requirement;
+use App\Models\Resource;
 use App\Models\Review;
 use App\Models\Section;
 use App\Models\Tag;
@@ -69,7 +74,12 @@ class DatabaseSeeder extends Seeder
             Exam::$tabla,
             Question::$tabla,
             Answer::$tabla,
-            'question_answer'
+            'question_answer',
+            Comment::$tabla,
+            Image::$tabla,
+            Note::$tabla,
+            Reaction::$tabla,
+            Resource::$tabla
         ]);
         $this->call(UserSeeder::class);
         $this->call(CategoryPostSeeder::class);

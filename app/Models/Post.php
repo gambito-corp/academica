@@ -25,7 +25,6 @@ class Post extends Model
         'slug',
         'extract',
         'body',
-        'status',
     ];
 
     /*
@@ -45,7 +44,19 @@ class Post extends Model
     }
     //Relaciones M a M Inversa
     //Relaciones 1 a 1 Polimorfica
+    public function Image(){
+        return $this->morphOne(Image::class, 'imageable');
+    }
     //Relaciones 1 a M Polimorfica
+    public function Resources(){
+        return $this->morphMany(Resource::class, 'resourceable');
+    }
+    public function Comments(){
+        return $this->morphMany(Comment::class, 'comentable');
+    }
+    public function Reactions(){
+        return $this->morphMany(Reaction::class, 'reactionable');
+    }
     //Relaciones M a M Polimorfica
     //Relaciones 1 a 1 Polimorfica Inversa
     //Relaciones 1 a M Polimorfica Inversa

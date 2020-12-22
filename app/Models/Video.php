@@ -37,6 +37,9 @@ class Video extends Model
     }
     //Relaciones M a M Inversa
     //Relaciones 1 a 1 Polimorfica
+    public function Note(){
+        return $this->morphOne(Note::class, 'noteable');
+    }
     //Relaciones 1 a M Polimorfica
     //Relaciones M a M Polimorfica
     //Relaciones 1 a 1 Polimorfica Inversa

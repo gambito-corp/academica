@@ -2,21 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2a76065-d8a2-4e6f-903d-489af9484f88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/app/View/Components/Blog/blog.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/app/View/Components/Curso/curso.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/database/diagrama/newCepecij.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/js/instructor/course/form.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/components/blog/blog.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../new-cepecij/resources/views/components/curso/curso.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/academica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/academica.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Course.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Exam.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Exam.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Lesson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Meeting.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Meeting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/diagramas/BD/academica.dia.autosave" beforeDir="false" afterPath="$PROJECT_DIR$/database/diagramas/BD/academica.dia.autosave" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CourseFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CourseFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_064508_create_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_21_064508_create_courses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/diagramas/BD/academica.dia" beforeDir="false" afterPath="$PROJECT_DIR$/database/diagramas/BD/academica.dia" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/diagramas/BD/academica.dia.autosave" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/CourseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CourseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/PostSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PostSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/InicioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/InicioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/Instructor/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Controllers/Instructor/CourseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../new-cepecij/app/Http/Livewire/Instructor/CourseIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/../new-cepecij/app/Http/Livewire/Instructor/CourseIndex.php" afterDir="false" />
@@ -44,7 +54,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -170,6 +180,8 @@
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/almasaeed2010/adminlte" />
+      <path value="$PROJECT_DIR$/vendor/jeroennoten/laravel-adminlte" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lwjqhCxc0PRByGfhprJTuP8KCh" />
@@ -182,7 +194,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeders" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/routes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -194,6 +206,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\academica\routes" />
       <recent name="C:\laragon\www\academica\database\seeders" />
     </key>
   </component>
@@ -211,7 +224,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608515240652</updated>
-      <workItem from="1608515243110" duration="25370000" />
+      <workItem from="1608515243110" duration="25453000" />
+      <workItem from="1608583114980" duration="6318000" />
+      <workItem from="1608610071484" duration="1791000" />
     </task>
     <servers />
   </component>
@@ -228,5 +243,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -8,6 +8,7 @@ use App\Models\Course;
 use App\Models\Description;
 use App\Models\Exam;
 use App\Models\Goal;
+use App\Models\Image;
 use App\Models\Lesson;
 use App\Models\Meeting;
 use App\Models\Qualification;
@@ -30,6 +31,14 @@ class CourseSeeder extends Seeder
     {
         $courses = Course::factory(50)->create();
         foreach ($courses as $course){
+            Image::factory()->Direccion([
+                'carpeta' => 'courses',
+                'ancho' => '640',
+                'alto' => '480'
+            ])->create([
+                'imageable_id' => $course->id,
+                'imageable_type' => Course::class,
+            ]);
             Goal::factory(4)->create([
                 'course_id' => $course->id
             ]);

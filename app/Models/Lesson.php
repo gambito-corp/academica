@@ -48,7 +48,22 @@ class Lesson extends Model
         return $this->belongsToMany(User::class);
     }
     //Relaciones 1 a 1 Polimorfica
+//    public function Note(){
+//        return $this->morphOne(Note::class, 'noteable');
+//    }
     //Relaciones 1 a M Polimorfica
+//    public function Notes(){
+//        return $this->morphmany(Note::class, 'noteable');
+//    }
+    public function Resources(){
+        return $this->morphMany(Resource::class, 'resourceable');
+    }
+    public function Comments(){
+        return $this->morphMany(Comment::class, 'comentable');
+    }
+    public function Reactions(){
+        return $this->morphMany(Reaction::class, 'reactionable');
+    }
     //Relaciones M a M Polimorfica
     //Relaciones 1 a 1 Polimorfica Inversa
     //Relaciones 1 a M Polimorfica Inversa
