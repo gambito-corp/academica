@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="ec2-18-230-88-222.sa-east-1.compute.amazonaws.com" id="1f54518f-7ad2-4939-8293-b818274d68e9" keyPath="C:\laragon\pem\PAConsultores.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu" />
+    </configs>
+  </component>
+</project>
