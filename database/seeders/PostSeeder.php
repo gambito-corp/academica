@@ -28,6 +28,7 @@ class PostSeeder extends Seeder
                     'imageable_id' => $post->id,
                     'imageable_type' => Post::class,
                 ]);
+                dd($image);
                 $contents = Storage::disk('Posts')->get($image->url);
                 Storage::disk('s3')->put('posts/'.$image->url, $contents);
                 Storage::deleteDirectory('posts');
