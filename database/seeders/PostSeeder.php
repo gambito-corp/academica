@@ -16,27 +16,25 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-        if(env('APP_ENV') == 'local'){
-            $posts = Post::factory(20)->create();
-            foreach ($posts as $post){
-                Storage::makeDirectory('posts');
-                $image = Image::factory()->Direccion([
-                    'carpeta' => 'posts',
-                    'ancho' => '400',
-                    'alto' => '400'
-                ])->create([
-                    'imageable_id' => $post->id,
-                    'imageable_type' => Post::class,
-                ]);
-                dd($image);
-                $contents = Storage::disk('Posts')->get($image->url);
-                Storage::disk('s3')->put('posts/'.$image->url, $contents);
-                Storage::deleteDirectory('posts');
-                $post->Tags()->attach([
-                    rand(1,4),
-                    rand(5,8)
-                ]);
-            }
+        $posts = Post::factory(20)->create();
+        foreach ($posts as $post){
+            Storage::makeDirectory('posts');
+            $image = Image::factory()->Direccion([
+                'carpeta' => 'posts',
+                'ancho' => '400',
+                'alto' => '400'
+            ])->create([
+                'imageable_id' => $post->id,
+                'imageable_type' => Post::class,
+            ]);
+            dd($image);
+            $contents = Storage::disk('Posts')->get($image->url);
+            Storage::disk('s3')->put('posts/'.$image->url, $contents);
+            Storage::deleteDirectory('posts');
+            $post->Tags()->attach([
+                rand(1,4),
+                rand(5,8)
+            ]);
         }
     }
 }

@@ -14,8 +14,6 @@ class CategoryPostSeeder extends Seeder
      */
     public function run()
     {
-        if(env('APP_ENV') == 'local'){
-            CategoryPost::factory(4)->create();
-        }
+        CategoryPost::factory(4)->create();
     }
 }

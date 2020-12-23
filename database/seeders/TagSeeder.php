@@ -14,8 +14,6 @@ class TagSeeder extends Seeder
      */
     public function run()
     {
-        if (env('APP_ENV') == 'local'){
-            Tag::factory(8)->create();
-        }
+        Tag::factory(8)->create();
     }
 }
