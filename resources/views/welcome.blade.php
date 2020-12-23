@@ -36,11 +36,9 @@
                 </div>
             @endif
 
-            <h1>Hola Mundo {{$post->Image->id}}</h1>
-                <img
-                    src="{{route('image', ['id' => $post->Image->id])}}"
-                >
-                <img src="{{route('image', ['id' => $post->Image->id])}}" alt="">
+            <h1>Hola Mundo</h1>
+                @dump($post)
+{{--                <img src="{{route('image', ['id' => $post->Image->id])}}">--}}
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
