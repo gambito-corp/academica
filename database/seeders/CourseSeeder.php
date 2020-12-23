@@ -42,7 +42,7 @@ class CourseSeeder extends Seeder
                 'imageable_type' => Course::class,
             ]);
             $contents = Storage::disk('Courses')->get($imagen->url);
-            $content = Storage::disk('s3')->put('courses/'.$imagen->url, $contents);
+            Storage::disk('s3')->put('courses/'.$imagen->url, $contents);
             Storage::deleteDirectory('courses');
             Goal::factory(4)->create([
                 'course_id' => $course->id

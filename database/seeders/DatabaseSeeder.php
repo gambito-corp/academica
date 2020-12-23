@@ -43,11 +43,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Storage::deleteDirectory('courses');
-        Storage::makeDirectory('courses');
-        Storage::deleteDirectory('posts');
-        Storage::makeDirectory('posts');
-
         $this->deleteDirectories([
             'courses',
             'posts',

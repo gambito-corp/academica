@@ -29,7 +29,7 @@ class PostSeeder extends Seeder
                     'imageable_type' => Post::class,
                 ]);
                 $contents = Storage::disk('Posts')->get($image->url);
-                $content = Storage::disk('s3')->put('posts/'.$image->url, $contents);
+                Storage::disk('s3')->put('posts/'.$image->url, $contents);
                 Storage::deleteDirectory('posts');
                 $post->Tags()->attach([
                     rand(1,4),
