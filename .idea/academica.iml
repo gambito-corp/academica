@@ -128,6 +128,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/almasaeed2010/adminlte" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jeroennoten/laravel-adminlte" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/aws/aws-sdk-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/mtdowling/jmespath.php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/league/flysystem-aws-s3-v3" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

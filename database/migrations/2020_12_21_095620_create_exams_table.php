@@ -17,8 +17,8 @@ class CreateExamsTable extends Migration
             $table->id();
             $table->foreignId('lesson_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('title');
-            $table->timestamp('started_at');
-            $table->timestamp('finaliced_at');
+            $table->timestamp('started_at')->default(now());
+            $table->timestamp('finaliced_at')->nullable();
             $table->string('duration');
             $table->string('attempts');
             $table->string('min');
