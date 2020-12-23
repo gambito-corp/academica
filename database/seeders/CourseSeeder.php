@@ -19,6 +19,7 @@ use App\Models\Section;
 use App\Models\User;
 use App\Models\Video;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Storage;
 
 class CourseSeeder extends Seeder
 {
@@ -31,7 +32,8 @@ class CourseSeeder extends Seeder
     {
         $courses = Course::factory(50)->create();
         foreach ($courses as $course){
-            Image::factory()->Direccion([
+            Storage::makeDirectory('courses');
+            $imagen = Image::factory()->Direccion([
                 'carpeta' => 'courses',
                 'ancho' => '640',
                 'alto' => '480'
@@ -39,6 +41,9 @@ class CourseSeeder extends Seeder
                 'imageable_id' => $course->id,
                 'imageable_type' => Course::class,
             ]);
+            $contents = Storage::disk('Courses')->get($imagen->url);
+            $content = Storage::disk('s3')->put('courses/'.$imagen->url, $contents);
+            Storage::deleteDirectory('courses');
             Goal::factory(4)->create([
                 'course_id' => $course->id
             ]);

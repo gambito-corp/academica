@@ -17,6 +17,7 @@ use App\Models\Level;
 use App\Models\Meeting;
 use App\Models\Note;
 use App\Models\Platform;
+use App\Models\Post;
 use App\Models\Prize;
 use App\Models\Profile;
 use App\Models\Qualification;
@@ -42,6 +43,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        Storage::deleteDirectory('courses');
+        Storage::makeDirectory('courses');
+        Storage::deleteDirectory('posts');
+        Storage::makeDirectory('posts');
+
         $this->deleteDirectories([
             'courses',
             'posts',
@@ -55,6 +61,9 @@ class DatabaseSeeder extends Seeder
             Profile::$tabla,
             CategoryPost::$tabla,
             Tag::$tabla,
+            Post::$tabla,
+            Course::$tabla,
+            'post_tag',
             Level::$tabla,
             CategoryCourse::$tabla,
             Prize::$tabla,
@@ -95,14 +104,14 @@ class DatabaseSeeder extends Seeder
     public function makeDirectories(array $directories)
     {
         foreach ($directories as $directory){
-            Storage::makeDirectory($directory);
+            Storage::disk('s3')->makeDirectory($directory);
         }
 
     }
     public function deleteDirectories(array $directories)
     {
         foreach ($directories as $directory){
-            Storage::deleteDirectory($directory);
+            Storage::disk('s3')->deleteDirectory($directory);
         }
     }
     public function truncate(array $tables)

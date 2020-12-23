@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Image;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\File;
 
 class ImageFactory extends Factory
 {
@@ -32,8 +33,10 @@ class ImageFactory extends Factory
     public function Direccion(array $mods)
     {
         return $this->state(function (array $attributes) use($mods) {
+            $image = $this->faker->image('storage/app/'.$mods['carpeta'], $mods['ancho'], $mods['alto']);
+            $image_name = substr($image, -36);
             return [
-                'url' => $this->faker->image('storage/app/'.$mods['carpeta'], $mods['ancho'], $mods['alto'], null, false),
+                'url' => $image_name,
             ];
         });
     }
