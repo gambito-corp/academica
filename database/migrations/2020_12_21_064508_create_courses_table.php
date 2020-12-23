@@ -26,6 +26,7 @@ class CreateCoursesTable extends Migration
             $table->text('description')->nullable();
             $table->enum('status', [Course::BORRADOR, Course::REVISION, Course::PUBLICADO, Course::BLOQUEADO])->default(Course::BORRADOR);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2a76065-d8a2-4e6f-903d-489af9484f88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/seeders/CourseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CourseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/PostSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PostSeeder.php" afterDir="false" />
-    </list>
+    <list default="true" id="f2a76065-d8a2-4e6f-903d-489af9484f88" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,7 +197,7 @@
       <workItem from="1608636660857" duration="9513000" />
       <workItem from="1608691303065" duration="31000" />
       <workItem from="1608699951605" duration="350000" />
-      <workItem from="1608705593709" duration="17834000" />
+      <workItem from="1608705593709" duration="18243000" />
     </task>
     <servers />
   </component>
