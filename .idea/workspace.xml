@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2a76065-d8a2-4e6f-903d-489af9484f88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/seeders/PostSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/PostSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +199,7 @@
       <workItem from="1608636660857" duration="9513000" />
       <workItem from="1608691303065" duration="31000" />
       <workItem from="1608699951605" duration="350000" />
-      <workItem from="1608705593709" duration="18798000" />
+      <workItem from="1608705593709" duration="19294000" />
     </task>
     <servers />
   </component>
