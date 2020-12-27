@@ -18,19 +18,19 @@ class PostSeeder extends Seeder
     {
         $posts = Post::factory(20)->create();
         foreach ($posts as $post){
-            $dir = Storage::makeDirectory('posts');
-            dump($dir);
-            $image = Image::factory()->Direccion([
-                'carpeta' => 'posts',
-                'ancho' => '400',
-                'alto' => '400'
-            ])->create([
-                'imageable_id' => $post->id,
-                'imageable_type' => Post::class,
-            ]);
-            $contents = Storage::disk('Posts')->get($image->url);
-            Storage::disk('s3')->put('posts/'.$image->url, $contents);
-            Storage::deleteDirectory('posts');
+//            $dir = Storage::makeDirectory('posts');
+//            dump($dir);
+//            $image = Image::factory()->Direccion([
+//                'carpeta' => 'posts',
+//                'ancho' => '400',
+//                'alto' => '400'
+//            ])->create([
+//                'imageable_id' => $post->id,
+//                'imageable_type' => Post::class,
+//            ]);
+//            $contents = Storage::disk('Posts')->get($image->url);
+//            Storage::disk('s3')->put('posts/'.$image->url, $contents);
+//            Storage::deleteDirectory('posts');
             $post->Tags()->attach([
                 rand(1,4),
                 rand(5,8)

@@ -33,7 +33,6 @@ class ImageFactory extends Factory
     public function Direccion(array $mods)
     {
         return $this->state(function (array $attributes) use($mods) {
-
             return [
                 'url' => $this->faker->image('storage/app/'.$mods['carpeta'], $mods['ancho'], $mods['alto'], true),
             ];

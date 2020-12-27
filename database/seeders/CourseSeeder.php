@@ -32,18 +32,18 @@ class CourseSeeder extends Seeder
     {
         $courses = Course::factory(50)->create();
         foreach ($courses as $course){
-            Storage::makeDirectory('courses');
-            $imagen = Image::factory()->Direccion([
-                'carpeta' => 'courses',
-                'ancho' => '640',
-                'alto' => '480'
-            ])->create([
-                'imageable_id' => $course->id,
-                'imageable_type' => Course::class,
-            ]);
-            $contents = Storage::disk('Courses')->get($imagen->url);
-            Storage::disk('s3')->put('courses/'.$imagen->url, $contents);
-            Storage::deleteDirectory('courses');
+//            Storage::makeDirectory('courses');
+//            $imagen = Image::factory()->Direccion([
+//                'carpeta' => 'courses',
+//                'ancho' => '640',
+//                'alto' => '480'
+//            ])->create([
+//                'imageable_id' => $course->id,
+//                'imageable_type' => Course::class,
+//            ]);
+//            $contents = Storage::disk('Courses')->get($imagen->url);
+//            Storage::disk('s3')->put('courses/'.$imagen->url, $contents);
+//            Storage::deleteDirectory('courses');
             Goal::factory(4)->create([
                 'course_id' => $course->id
             ]);
