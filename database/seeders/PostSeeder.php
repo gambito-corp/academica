@@ -18,7 +18,8 @@ class PostSeeder extends Seeder
     {
         $posts = Post::factory(20)->create();
         foreach ($posts as $post){
-            Storage::makeDirectory('posts');
+            $dir = Storage::makeDirectory('posts');
+            dump($dir);
             $image = Image::factory()->Direccion([
                 'carpeta' => 'posts',
                 'ancho' => '400',
