@@ -18,7 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', HomeController::class)->name('home');
 Route::get('cursos', function (){
     return 'aqui se mostrara los cursos';
-})->name('cursos');
+})->name('course');
+Route::get('cursos/{course}', function ($course){
+    return 'aqui se mostrara la informacion del curso'. $course;
+})->name('course.show');
 Route::get('/test', [IndexController::class, 'test'])->name('ejemplo');
 Route::get('imagen/{id}', [IndexController::class, 'getImage'])->name('image');
 

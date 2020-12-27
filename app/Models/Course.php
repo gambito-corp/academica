@@ -29,6 +29,11 @@ class Course extends Model
         }
     }
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     protected $fillable = [
         'user_id',
         'category_course_id',

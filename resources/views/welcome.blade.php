@@ -66,7 +66,7 @@
             dirigete a nuestro catalogo de cursos y encontraras el Curso o Diplomado Perfecto para ti
         </p>
         <div class="flex justify-center mt-4">
-            <a href="{{route('cursos')}}" class="btn btn-danger"> Catalogo de Cursos</a>
+            <a href="{{route('course')}}" class="btn btn-danger"> Catalogo de Cursos</a>
         </div>
     </section>
     <section class="mt-24">
@@ -76,10 +76,27 @@
         </p>
         <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8">
             @forelse($courses as $course)
-                <article>
+                <article class="card">
                     @isset($course->Image)
-                        <img src="{{route('image', ['id' => $course->Image->hash($course->Image->id)])}}" alt="imagen de portada del curso {{$course->title}}">
+                        <img class="h-36 w-full object-cover" src="{{route('image', ['id' => $course->Image->hash($course->Image->id)])}}" alt="imagen de portada del curso {{$course->title}}">
                     @endisset
+                    <div class="card-body ">
+                        <h2 class="card-title">{{Str::limit($course->title, 40)}}</h2>
+                        <a href="#" class="text-gray-500 text-sm">Prof: {{'@'.$course->Teacher->username}}</a>
+                        <p>{{Str::limit($course->description,50)}}</p>
+                        <div class="flex">
+                            <ul class="flex text-sm">
+{{--                                reviews_count o rating--}}
+                                <li class="mr-2"><i class="fas fa-star text-{{$course->rating >= 1?'yellow':'gray'}}-400"></i></li>
+                                <li class="mr-2"><i class="fas fa-star text-{{$course->rating >= 2?'yellow':'gray'}}-400"></i></li>
+                                <li class="mr-2"><i class="fas fa-star text-{{$course->rating >= 3?'yellow':'gray'}}-400"></i></li>
+                                <li class="mr-2"><i class="fas fa-star text-{{$course->rating >= 4?'yellow':'gray'}}-400"></i></li>
+                                <li class="mr-2"><i class="fas fa-star text-{{$course->rating == 5?'yellow':'gray'}}-400"></i></li>
+                            </ul>
+                            <p class="text-sm text-gray-500 ml-auto"><i class="fas fa-users"></i>({{$course->students_count}})</p>
+                        </div>
+                        <a href="{{route('course.show', $course)}}" class="btn btn-outline-primary btn-block mt-2">Acceder!!</a>
+                    </div>
                 </article>
             @empty
 

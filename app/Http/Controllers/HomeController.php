@@ -16,8 +16,8 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $courses = Course::where('status', Course::PUBLICADO)->latest('id')->paginate('8')->load('Image');
-        $posts = Post::where('status', Post::PUBLICADO)->latest('id')->paginate('8')->load('Image');
+        $courses = Course::where('status', Course::PUBLICADO)->latest('id')->get()->take(12)->load('Image');
+        $posts = Post::where('status', Post::PUBLICADO)->latest('id')->get()->take(12)->load('Image');
         return view('welcome', compact('courses', 'posts'));
     }
 }
