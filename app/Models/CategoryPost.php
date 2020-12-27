@@ -12,6 +12,7 @@ class CategoryPost extends Model
     use SoftDeletes;
 
     public static $tabla = 'category_posts';
+//    protected $withCount = [''];
 
     protected $fillable = [
         'title',

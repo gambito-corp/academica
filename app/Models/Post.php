@@ -17,6 +17,7 @@ class Post extends Model
     public const BLOQUEADO = 4;
 
     public static $tabla = 'posts';
+    public static $carpeta = 'posts';
 
     protected $fillable = [
         'user_id',

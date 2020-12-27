@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Hashids\Hashids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -21,6 +22,14 @@ class Image extends Model
 
     public function imageable(){
         return $this->morphTo();
+    }
+
+    public function hash($id, $decode = null)
+    {
+        $hashids = new Hashids();
+        return is_null($decode)
+            ?  $hashids->encode($id,0,1,2,3,4,5)
+            :  $hashids->decode($id)[0];
     }
 
     /*

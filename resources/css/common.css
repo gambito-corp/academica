@@ -1,0 +1,12 @@
+.container{
+    @apply max-w-7xl mx-auto px-4;
+}
+.titulo{
+    @apply text-gray-700 text-3xl uppercase text-center;
+}
+.titulo-blanco{
+    @apply text-white text-3xl uppercase text-center;
+}
+
+
+

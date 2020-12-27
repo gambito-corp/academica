@@ -17,6 +17,17 @@ class Course extends Model
     public const BLOQUEADO = 4;
 
     public static $tabla = 'courses';
+    public static $carpeta = 'courses';
+    protected $withCount = ['Students', 'Reviews'];
+
+    public function getRatingAttribute()
+    {
+        if ($this->reviews_count)
+            return round($this->Reviews->avg('rating'), 1);
+        else{
+            return 5;
+        }
+    }
 
     protected $fillable = [
         'user_id',

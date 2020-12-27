@@ -1,0 +1,64 @@
+.btn {
+    @apply inline-block text-center text-gray-800 rounded align-middle cursor-pointer select-none font-normal bg-transparent border border-solid border-transparent py-1.5 px-3 text-base no-underline transition duration-500 ease-in-out;
+}
+
+.btn-block{
+    @apply w-full block;
+}
+
+
+/*Azul*/
+.btn-primary {
+    @apply bg-blue-500 text-white border-blue-500 shadow-none;
+}
+.btn-outline-primary {
+    @apply bg-transparent text-blue-500 border-blue-500 shadow-none;
+}
+.btn-primary:hover {
+    @apply bg-blue-700 text-white border-blue-700 shadow-none;
+}
+.btn-outline-primary:hover {
+    @apply bg-blue-700 text-white border-blue-700 shadow-none;
+}
+
+/*Azul*/
+.btn-success {
+    @apply bg-green-500 text-white border-green-500 shadow-none;
+}
+.btn-outline-success {
+    @apply bg-transparent text-green-500 border-green-500 shadow-none;
+}
+.btn-success:hover {
+    @apply bg-green-700 text-white border-green-700 shadow-none;
+}
+.btn-outline-success:hover {
+    @apply bg-green-700 text-white border-green-700 shadow-none;
+}
+
+/*Rojo*/
+.btn-danger {
+    @apply bg-red-500 text-white border-red-500 shadow-none;
+}
+.btn-outline-danger {
+    @apply bg-transparent text-red-500 border-red-500 shadow-none;
+}
+.btn-danger:hover {
+    @apply bg-red-700 text-white border-red-700 shadow-none;
+}
+.btn-outline-danger:hover {
+    @apply bg-red-700 text-white border-red-700 shadow-none;
+}
+
+/*Amarillo*/
+.btn-warning {
+    @apply bg-yellow-500 text-white border-yellow-500 shadow-none;
+}
+.btn-outline-warning {
+    @apply bg-transparent text-yellow-500 border-yellow-500 shadow-none;
+}
+.btn-warning:hover {
+    @apply bg-yellow-700 text-white border-yellow-700 shadow-none;
+}
+.btn-outline-warning:hover {
+    @apply bg-yellow-700 text-white border-yellow-700 shadow-none;
+}

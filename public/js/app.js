@@ -21275,10 +21275,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
+/***/ "./resources/css/style.css":
+/*!*********************************!*\
+  !*** ./resources/css/style.css ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21294,6 +21294,8 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
+__webpack_require__(/*! ./slider */ "./resources/js/slider.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
@@ -21331,15 +21333,76 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/slider.js":
+/*!********************************!*\
+  !*** ./resources/js/slider.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var slider_index = 0;
+show_slide(slider_index); //esto lo extraigo
+
+function show_slide(index) {
+  var slides = document.querySelectorAll('.slide');
+  var dots = document.querySelectorAll('.dot-nav'); //reset del slide
+
+  if (index >= slides.length) slider_index = 0;
+  if (index < 0) slider_index = slides.length - 1; //hago funcionar el slide
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+    dots[i].classList.remove('active-dot');
+  } //Lo Muestro
+
+
+  slides[slider_index].style.display = 'block';
+  dots[slider_index].classList.add('active-dot');
+} //anterior
+
+
+document.querySelector('#arrow-prev').addEventListener('click', function () {
+  show_slide(--slider_index);
+}); //Siguiente
+
+document.querySelector('#arrow-next').addEventListener('click', function () {
+  show_slide(++slider_index);
+}); //Dots
+
+document.querySelectorAll('.dot-nav').forEach(function (element) {
+  element.addEventListener('click', function () {
+    var dots = Array.prototype.slice.call(this.parentElement.children),
+        dot_index = dots.indexOf(element);
+    show_slide(slider_index = dot_index);
+  });
+}); //Automatico
+// setInterval(() =>{
+//     show_slide(++slider_index);
+// }, 4000);
+
+/***/ }),
+
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!***********************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/css/app.css ***!
-  \***********************************************************/
+/*!***************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/css/style.css ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\laragon\www\academica\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\academica\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\laragon\www\academica\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\laragon\www\academica\resources\css\style.css */"./resources/css/style.css");
 
 
 /***/ })
