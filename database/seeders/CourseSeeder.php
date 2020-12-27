@@ -69,22 +69,32 @@ class CourseSeeder extends Seeder
                     'section_id' => $section->id
                 ]);
                 foreach ($lessons as $lesson){
+                    $rand = rand(1,3);
                     Description::factory()->create([
                         'lesson_id' => $lesson->id
                     ]);
-                    Video::factory()->create([
-                        'lesson_id' => $lesson->id,
-                    ]);
-                    Meeting::factory()->create([
-                        'lesson_id' => $lesson->id,
-                    ]);
-                    Exam::factory()->create([
-                        'lesson_id' => $lesson->id,
-                    ]);
-                    Question::factory(20)->create([
-                        'exam_id' => 1,
-                    ]);
-                    Answer::factory(4)->create();
+                    if ($rand == 1){
+                        Video::factory()->create([
+                            'lesson_id' => $lesson->id,
+                        ]);
+                    }
+                    if ($rand == 2){
+                        Meeting::factory()->create([
+                            'lesson_id' => $lesson->id,
+                        ]);
+                    }
+                    if ($rand == 3){
+                        $exam = Exam::factory()->create([
+                            'lesson_id' => $lesson->id,
+                        ]);
+                        $questions = Question::factory(20)->create([
+                            'exam_id' => $exam->id,
+                        ]);
+                        foreach ($questions as $question){
+                            $aleatorio = rand(2,4);
+                            Answer::factory($aleatorio)->create();
+                        }
+                    }
                 }
             }
         }
