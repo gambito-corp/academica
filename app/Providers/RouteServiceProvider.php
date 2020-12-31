@@ -46,6 +46,10 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
+            Route::middleware('web')
+                ->prefix('cursos')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/course.php'));
             Route::middleware('web', 'auth')
                 ->prefix('admin')
                 ->namespace($this->namespace)

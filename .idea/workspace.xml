@@ -2,10 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2a76065-d8a2-4e6f-903d-489af9484f88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/css/ajustes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Course/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Course/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/course-card.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/course.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Course.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Lesson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/LessonFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/LessonFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_085218_create_lessons_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_21_085218_create_lessons_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_21_204247_create_comments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_21_204247_create_comments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/CourseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CourseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/btn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/buscador.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assets/buscador.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -151,7 +171,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lwjqhCxc0PRByGfhprJTuP8KCh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -239,7 +261,15 @@
       <workItem from="1608705593709" duration="30503000" />
       <workItem from="1608919412969" duration="3681000" />
       <workItem from="1608943729087" duration="10415000" />
-      <workItem from="1609013231063" duration="41948000" />
+      <workItem from="1609013231063" duration="42001000" />
+      <workItem from="1609109351300" duration="8020000" />
+      <workItem from="1609166094957" duration="5664000" />
+      <workItem from="1609215159352" duration="3799000" />
+      <workItem from="1609281660801" duration="1961000" />
+      <workItem from="1609345670315" duration="93000" />
+      <workItem from="1609346299597" duration="105000" />
+      <workItem from="1609367948326" duration="406000" />
+      <workItem from="1609374452290" duration="18419000" />
     </task>
     <servers />
   </component>

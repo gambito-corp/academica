@@ -43,14 +43,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->deleteDirectories([
-            'courses',
-            'posts',
-        ]);
-        $this->makeDirectories([
-            'courses',
-            'posts',
-        ]);
+//        $this->deleteDirectories([
+//            'courses',
+//            'posts',
+//        ]);
+//        $this->makeDirectories([
+//            'courses',
+//            'posts',
+//        ]);
         $this->truncate([
             User::$tabla,
             Profile::$tabla,

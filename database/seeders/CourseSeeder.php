@@ -65,25 +65,40 @@ class CourseSeeder extends Seeder
                 'course_id' => $course->id
             ]);
             foreach ($sections as $section){
+
+                $collection = collect(['Video', 'Meeting', 'Exam']);
+
+                $type = $collection->random();
+
+                $free = false;
+
+                if($type == 'Video'||$type == 'Meeting'){
+                    $collection = collect([false, true]);
+                    $free = $collection->random();
+                }
+
                 $lessons = Lesson::factory(4)->create([
-                    'section_id' => $section->id
+                    'section_id' => $section->id,
+                    'type' => $type,
+                    'free' => $free
                 ]);
+
                 foreach ($lessons as $lesson){
                     $rand = rand(1,3);
                     Description::factory()->create([
                         'lesson_id' => $lesson->id
                     ]);
-                    if ($rand == 1){
+                    if ($lesson->type == 'Video'){
                         Video::factory()->create([
                             'lesson_id' => $lesson->id,
                         ]);
                     }
-                    if ($rand == 2){
+                    if ($lesson->type == 'Meeting'){
                         Meeting::factory()->create([
                             'lesson_id' => $lesson->id,
                         ]);
                     }
-                    if ($rand == 3){
+                    if ($lesson->type == 'Exam'){
                         $exam = Exam::factory()->create([
                             'lesson_id' => $lesson->id,
                         ]);

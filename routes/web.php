@@ -15,16 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Index Route
 Route::get('/', HomeController::class)->name('home');
-Route::get('cursos', function (){
-    return 'aqui se mostrara los cursos';
-})->name('course');
-Route::get('cursos/{course}', function ($course){
-    return 'aqui se mostrara la informacion del curso'. $course;
-})->name('course.show');
-Route::get('/test', [IndexController::class, 'test'])->name('ejemplo');
 Route::get('imagen/{id}', [IndexController::class, 'getImage'])->name('image');
-
+//test Route
+Route::get('/test', [IndexController::class, 'test'])->name('ejemplo');
+//Auth Routes
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

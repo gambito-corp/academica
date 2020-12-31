@@ -17,6 +17,22 @@ class Lesson extends Model
     ];
 
     public static $tabla = 'lessons';
+    protected $attributes = ['Icon'];
+
+    public function getIconAttribute()
+    {
+        if ($this->type == 'Video')
+        {
+            $icon = 'fas fa-play-circle';
+        }elseif ($this->type == 'Exam'){
+            $icon = 'fas fa-book-open';
+        }elseif ($this->type == 'Meeting'){
+            $icon = 'fas fa-video';
+        }else{
+            $icon = null;
+        }
+        return $icon;
+    }
 
     /*
  * RELACIONES

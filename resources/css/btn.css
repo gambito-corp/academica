@@ -62,3 +62,11 @@
 .btn-outline-warning:hover {
     @apply bg-yellow-700 text-white border-yellow-700 shadow-none;
 }
+
+/*blanco*/
+.btn-ligth {
+    @apply bg-white text-gray-700 border-white shadow-none;
+}
+.btn-ligth:hover {
+    @apply bg-gray-700 text-white border-gray-700 shadow-none;
+}

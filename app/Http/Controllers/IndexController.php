@@ -30,8 +30,12 @@ class IndexController extends Controller
         $decode = new Imagen();
         $id = $decode->hash($id, true);
         $data = Imagen::whereId($id)->first();
-        $file = Image::make(Storage::disk('s3')->get($data->imageable::$carpeta . '/' . $data->url));
+        $file = Image::make(Storage::disk('local')->get($data->imageable::$carpeta . '/' . $data->url));
         $file->response();
+        if (env('APP_ENV') == 'production'){
+            $file = Image::make(Storage::disk('s3')->get($data->imageable::$carpeta . '/' . $data->url));
+            $file->response();
+        }
         return new Response($file, 200);
     }
 }

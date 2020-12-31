@@ -18,7 +18,20 @@ class Course extends Model
 
     public static $tabla = 'courses';
     public static $carpeta = 'courses';
-    protected $withCount = ['Students', 'Reviews'];
+    protected $withCount = ['Students', 'Reviews', 'Comments'];
+
+    //geters
+    public function getTablaAttribute()
+    {
+        return self::$tabla;
+    }
+
+    public function getCommentsAttribute()
+    {
+        if ($this->Comments()){
+            return $this->Comments()->count();
+        }
+    }
 
     public function getRatingAttribute()
     {
@@ -34,6 +47,27 @@ class Course extends Model
         return 'slug';
     }
 
+    //Query Scope
+    public function scopeCategory($query, $category_id)
+    {
+        if ($category_id){
+            return$query->where('category_course_id', $category_id);
+        }
+    }
+
+    public function scopeLevel($query, $level_id)
+    {
+        if ($level_id){
+            return$query->where('level_id', $level_id);
+        }
+    }
+
+    public function scopePrize($query, $prize_id)
+    {
+        if ($prize_id){
+            return$query->where('prize_id', $prize_id);
+        }
+    }
     protected $fillable = [
         'user_id',
         'category_course_id',
@@ -96,6 +130,10 @@ class Course extends Model
         return $this->morphOne(Image::class, 'imageable');
     }
     //Relaciones 1 a M Polimorfica
+
+    public function Comments(){
+        return $this->morphMany(Comment::class, 'comentable');
+    }
     //Relaciones M a M Polimorfica
     //Relaciones 1 a 1 Polimorfica Inversa
     //Relaciones 1 a M Polimorfica Inversa

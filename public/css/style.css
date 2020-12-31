@@ -289,6 +289,34 @@
   box-shadow: none;
 }
 
+/*blanco*/
+
+.btn-ligth {
+  --bg-opacity: 1;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #374151;
+  color: rgba(55, 65, 81, var(--text-opacity));
+  --border-opacity: 1;
+  border-color: #ffffff;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
+  box-shadow: none;
+}
+
+.btn-ligth:hover {
+  --bg-opacity: 1;
+  background-color: #374151;
+  background-color: rgba(55, 65, 81, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #ffffff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  --border-opacity: 1;
+  border-color: #374151;
+  border-color: rgba(55, 65, 81, var(--border-opacity));
+  box-shadow: none;
+}
+
 .card{
   --bg-opacity: 1;
   background-color: #ffffff;
@@ -410,3 +438,4 @@
     opacity: 1
   }
 }
+

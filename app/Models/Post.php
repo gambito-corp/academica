@@ -18,6 +18,19 @@ class Post extends Model
 
     public static $tabla = 'posts';
     public static $carpeta = 'posts';
+    protected $withCount = ['Comments'];
+
+    public function getCommentsAttribute()
+    {
+        if ($this->Comments()){
+            return $this->Comments()->count();
+        }
+    }
+
+    public function getTablaAttribute()
+    {
+        return self::$tabla;
+    }
 
     protected $fillable = [
         'user_id',
