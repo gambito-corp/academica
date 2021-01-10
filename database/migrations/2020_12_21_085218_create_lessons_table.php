@@ -17,8 +17,6 @@ class CreateLessonsTable extends Migration
             $table->id();
             $table->foreignId('section_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('title');
-            $table->string('type');
-            $table->boolean('free')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

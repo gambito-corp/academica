@@ -19,6 +19,7 @@ class CreateVideosTable extends Migration
             $table->foreignId('lesson_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('url');
             $table->text('iframe');
+            $table->boolean('free')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

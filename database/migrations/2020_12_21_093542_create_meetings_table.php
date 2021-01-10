@@ -23,6 +23,7 @@ class CreateMeetingsTable extends Migration
             $table->string('password');
             $table->string('codigo');
             $table->string('url');
+            $table->boolean('free')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

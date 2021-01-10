@@ -21,5 +21,5 @@ mix.js('resources/js/app.js', 'public/js')
         ]
     })
     .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts')
-    .browserSync('academica.test')
+    .browserSync('academica.test:81')
     .webpackConfig(require('./webpack.config'));

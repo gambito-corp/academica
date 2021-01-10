@@ -17,21 +17,34 @@ class Lesson extends Model
     ];
 
     public static $tabla = 'lessons';
-    protected $attributes = ['Icon'];
 
-    public function getIconAttribute()
+    public function Icon()
     {
-        if ($this->type == 'Video')
+        if ($this->Exam)
         {
-            $icon = 'fas fa-play-circle';
-        }elseif ($this->type == 'Exam'){
-            $icon = 'fas fa-book-open';
-        }elseif ($this->type == 'Meeting'){
-            $icon = 'fas fa-video';
+            $icon = 'fas fa-book-open mr-2 text-gray-600';
+        }elseif ($this->Meeting){
+            $icon = 'fas fa-video mr-2 text-blue-600';
+        }elseif ($this->Video){
+            $icon = 'fas fa-play-circle mr-2 text-gray-600';
         }else{
             $icon = null;
         }
         return $icon;
+    }
+
+    public function Free(){
+        $respuesta = false;
+        if (isset($this->Exam->free) && $this->Exam->free == 1){
+            $respuesta = true;
+        }
+        if (isset($this->Meeting->free) && $this->Meeting->free == 1){
+            $respuesta = true;
+        }
+        if (isset($this->Video->free) && $this->Video->free == 1){
+            $respuesta = true;
+        }
+        return $respuesta;
     }
 
     /*

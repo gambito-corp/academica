@@ -32,18 +32,6 @@ class CourseSeeder extends Seeder
     {
         $courses = Course::factory(50)->create();
         foreach ($courses as $course){
-//            Storage::makeDirectory('courses');
-//            $imagen = Image::factory()->Direccion([
-//                'carpeta' => 'courses',
-//                'ancho' => '640',
-//                'alto' => '480'
-//            ])->create([
-//                'imageable_id' => $course->id,
-//                'imageable_type' => Course::class,
-//            ]);
-//            $contents = Storage::disk('Courses')->get($imagen->url);
-//            Storage::disk('s3')->put('courses/'.$imagen->url, $contents);
-//            Storage::deleteDirectory('courses');
             Goal::factory(4)->create([
                 'course_id' => $course->id
             ]);
@@ -65,40 +53,35 @@ class CourseSeeder extends Seeder
                 'course_id' => $course->id
             ]);
             foreach ($sections as $section){
-
-                $collection = collect(['Video', 'Meeting', 'Exam']);
-
-                $type = $collection->random();
-
-                $free = false;
-
-                if($type == 'Video'||$type == 'Meeting'){
-                    $collection = collect([false, true]);
-                    $free = $collection->random();
-                }
-
                 $lessons = Lesson::factory(4)->create([
                     'section_id' => $section->id,
-                    'type' => $type,
-                    'free' => $free
-                ]);
 
+                ]);
                 foreach ($lessons as $lesson){
                     $rand = rand(1,3);
+                    $free = collect([false, true]);
+                    $type = collect(['Video', 'Meeting', 'Exam']);
+                    $free = $free->random();
+                    $type = $type->random();
                     Description::factory()->create([
                         'lesson_id' => $lesson->id
                     ]);
-                    if ($lesson->type == 'Video'){
+                    if ($type == 'Video'){
+
                         Video::factory()->create([
                             'lesson_id' => $lesson->id,
+                            'free' => $free
                         ]);
                     }
-                    if ($lesson->type == 'Meeting'){
+                    if ($type == 'Meeting'){
+                        $collection = collect([false, true]);
+                        $free = $collection->random();
                         Meeting::factory()->create([
                             'lesson_id' => $lesson->id,
+                            'free' => $free
                         ]);
                     }
-                    if ($lesson->type == 'Exam'){
+                    if ($type == 'Exam'){
                         $exam = Exam::factory()->create([
                             'lesson_id' => $lesson->id,
                         ]);
