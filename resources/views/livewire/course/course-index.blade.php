@@ -11,9 +11,9 @@
                     Categorias
                     <i class="text-sm mr-2 fas fa-angle-down"></i>
                 </button>
-                <div class="absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl" x-show="open" x-on:click.away="open = false">
+                <div class="absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl" x-show.transition="open" x-on:click.away="open = false">
                     @foreach($categories as $category)
-                        <a class=" cursor-pointer transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-purple-500 hover:text-white" wire:click="$set('category_id', {{$category->id}})" x-on:click="open = false">{{$category->title}}</a>
+                        <a class=" cursor-pointer transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-yellow-500 hover:text-white" wire:click="$set('category_id', {{$category->id}})" x-on:click="open = false">{{$category->title}}</a>
                         @if(!$loop->last)
                             <div class="py-1">
                                 <hr>
@@ -28,9 +28,9 @@
                     Niveles
                     <i class="text-sm mr-2 fas fa-angle-down"></i>
                 </button>
-                <div class="absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl" x-show="open" x-on:click.away="open = false">
+                <div class="absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl" x-show.transition="open" x-on:click.away="open = false">
                     @foreach($levels as $level)
-                        <a class=" cursor-pointer transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-purple-500 hover:text-white" wire:click="$set('level_id', {{$level->id}})" x-on:click="open = false">{{$level->title}}</a>
+                        <a class=" cursor-pointer transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-yellow-500 hover:text-white" wire:click="$set('level_id', {{$level->id}})" x-on:click="open = false">{{$level->title}}</a>
                         @if(!$loop->last)
                             <div class="py-1">
                                 <hr>
@@ -45,9 +45,9 @@
                     Precios
                     <i class="text-sm mr-2 fas fa-angle-down"></i>
                 </button>
-                <div class="absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl" x-show="open" x-on:click.away="open = false">
+                <div class="absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl" x-show.transition="open" x-on:click.away="open = false">
                     @foreach($prizes as $prize)
-                        <a class=" cursor-pointer transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-purple-500 hover:text-white" wire:click="$set('prize_id', {{$prize->id}})" x-on:click="open = false">{{$prize->value == '0'?'Gratuitos':$prize->value.' $'}}</a>
+                        <a class=" cursor-pointer transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-yellow-500 hover:text-white" wire:click="$set('prize_id', {{$prize->id}})" x-on:click="open = false">{{$prize->value == '0'?'Gratuitos':$prize->value.' $'}}</a>
                         @if(!$loop->last)
                             <div class="py-1">
                                 <hr>

@@ -51,23 +51,35 @@ class Course extends Model
     public function scopeCategory($query, $category_id)
     {
         if ($category_id){
-            return$query->where('category_course_id', $category_id);
+            return $query->where('category_course_id', $category_id);
         }
     }
 
     public function scopeLevel($query, $level_id)
     {
         if ($level_id){
-            return$query->where('level_id', $level_id);
+            return $query->where('level_id', $level_id);
         }
     }
 
     public function scopePrize($query, $prize_id)
     {
         if ($prize_id){
-            return$query->where('prize_id', $prize_id);
+            return $query->where('prize_id', $prize_id);
         }
     }
+
+    //Metodos Personalizados
+    public function Related(){
+        $related = Course::where('category_course_id', $this->category_course_id)
+            ->where('id', '!=', $this->id)
+            ->where('status', self::PUBLICADO)
+            ->latest('id')
+            ->take(5)
+            ->get();
+        return $related;
+    }
+
     protected $fillable = [
         'user_id',
         'category_course_id',
@@ -132,6 +144,9 @@ class Course extends Model
     //Relaciones 1 a M Polimorfica
 
     public function Comments(){
+        return $this->morphMany(Comment::class, 'comentable');
+    }
+    public function Coments(){
         return $this->morphMany(Comment::class, 'comentable');
     }
     //Relaciones M a M Polimorfica

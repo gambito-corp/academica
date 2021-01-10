@@ -32,6 +32,7 @@ use App\Models\User;
 use App\Models\Video;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
 
 class DatabaseSeeder extends Seeder
@@ -43,47 +44,42 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-//        $this->deleteDirectories([
-//            'courses',
-//            'posts',
-//        ]);
-//        $this->makeDirectories([
-//            'courses',
-//            'posts',
-//        ]);
-        $this->truncate([
-            User::$tabla,
-            Profile::$tabla,
-            CategoryPost::$tabla,
-            Tag::$tabla,
-            Post::$tabla,
-            Course::$tabla,
+
+        $this->erase([
             'post_tag',
-            Level::$tabla,
-            CategoryCourse::$tabla,
-            Prize::$tabla,
-            Goal::$tabla,
-            Requirement::$tabla,
-            Audience::$tabla,
-            Review::$tabla,
-            Qualification::$tabla,
             'course_user',
-            Section::$tabla,
-            Platform::$tabla,
-            Lesson::$tabla,
             'lesson_user',
-            Description::$tabla,
-            Video::$tabla,
-            Meeting::$tabla,
-            Exam::$tabla,
-            Question::$tabla,
-            Answer::$tabla,
             'question_answer',
-            Comment::$tabla,
-            Image::$tabla,
-            Note::$tabla,
-            Reaction::$tabla,
-            Resource::$tabla
+        ]);
+        $this->truncateTable([
+            User::class,
+            Profile::class,
+            CategoryPost::class,
+            Tag::class,
+            Post::class,
+            Course::class,
+            Level::class,
+            CategoryCourse::class,
+            Prize::class,
+            Goal::class,
+            Requirement::class,
+            Audience::class,
+            Review::class,
+            Qualification::class,
+            Section::class,
+            Platform::class,
+            Lesson::class,
+            Description::class,
+            Video::class,
+            Meeting::class,
+            Exam::class,
+            Question::class,
+            Answer::class,
+            Comment::class,
+            Image::class,
+            Note::class,
+            Reaction::class,
+            Resource::class
         ]);
         $this->call(UserSeeder::class);
         $this->call(CategoryPostSeeder::class);
@@ -94,22 +90,20 @@ class DatabaseSeeder extends Seeder
         $this->call(PrizeSeeder::class);
         $this->call(PlatformSeeder::class);
         $this->call(CourseSeeder::class);
+        $this->call(ImageSeeder::class);
     }
 
-    public function makeDirectories(array $directories)
+    protected function truncateTable($models): void
     {
-        foreach ($directories as $directory){
-            Storage::disk('s3')->makeDirectory($directory);
+        Schema::disableForeignKeyConstraints();
+        foreach ($models as $model)
+        {
+            $model::truncate();
         }
+        Schema::enableForeignKeyConstraints();
+    }
 
-    }
-    public function deleteDirectories(array $directories)
-    {
-        foreach ($directories as $directory){
-            Storage::disk('s3')->deleteDirectory($directory);
-        }
-    }
-    public function truncate(array $tables)
+    public function erase(array $tables)
     {
         DB::statement('SET FOREIGN_KEY_CHECKS = 0;');
         foreach ($tables as $table) {

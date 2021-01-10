@@ -21,7 +21,7 @@
     @apply bg-blue-700 text-white border-blue-700 shadow-none;
 }
 
-/*Azul*/
+/*verde*/
 .btn-success {
     @apply bg-green-500 text-white border-green-500 shadow-none;
 }

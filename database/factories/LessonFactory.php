@@ -24,7 +24,7 @@ class LessonFactory extends Factory
         return [
             'section_id' => null,
             'title' => $this->faker->word(10),
-            'type' => null,
+
         ];
     }
 }
